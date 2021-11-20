@@ -5,7 +5,7 @@
         <groups>
         </groups>
         <classes>
-            <class name="ui.ui.MainPageTestSuite"/>
+            <class name="ui.MainPageTestSuite"/>
         </classes>
     </test>
 </suite>
