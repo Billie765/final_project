@@ -1,4 +1,4 @@
-package locators;
+package ui.locators;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
