@@ -8,11 +8,11 @@ import static ui.locators.MainPageSelenide.*;
 public class MainPageTestSuite extends BaseTest {
 
 
-    @Test
-    @Description("Verify that the banner is present")
-    public void verifyThatBannerIsPresent() {
-        bannerIsDisplayed();
-    }
+//    @Test
+//    @Description("Verify that the banner is present")
+//    public void verifyThatBannerIsPresent() {
+//        bannerIsDisplayed();
+//    }
 
     @Test(dataProvider="customSearch")
     @Description("Verify that search works")
