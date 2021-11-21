@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Testing TestNG">
-    <test name="All tests">
-        <groups>
-        </groups>
-        <classes>
-            <class name="ui.MainPageTestSuite"/>
-        </classes>
-    </test>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Final Project test suite"  >
+    <!-- suite name="Suite Name" -->
+    <suite-files>
+        <suite-file path="uiSuite.xml" />
+        <suite-file path="apiSuite.xml" />
+    </suite-files>
 </suite>
