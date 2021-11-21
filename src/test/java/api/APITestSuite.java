@@ -84,14 +84,7 @@ public class APITestSuite {
         Assert.assertEquals(country, Kharkiv.country, "Incorrect country");
     }
 
-    @Test
-    @Description("Check timezone")
-    public void checkTimeZone() throws IOException {
-        String jsonString = EntityUtils.toString(response.getEntity());
-        DocumentContext doc = JsonPath.parse(jsonString);
-        int timezone = doc.read("$.timezone");
-        Assert.assertEquals(timezone, Kharkiv.timezone, "Incorrect timezone");
-    }
+
 
     @Test
     @Description("Check city name")
@@ -111,14 +104,23 @@ public class APITestSuite {
         Assert.assertEquals(id, Kharkiv.cityId, "Incorrect city id");
     }
 
-    @Test
-    @Description
-    public void checkWeatherDescription() throws IOException {
-        String jsonString = EntityUtils.toString(response.getEntity());
-        DocumentContext doc = JsonPath.parse(jsonString);
-        String main = doc.read("$.weather[0].main");
-        Assert.assertNotNull(main, "No main message");
-        String description = doc.read("$.weather[0].description");
-        Assert.assertNotNull(description, "No weather description");
-    }
+//    @Test
+//    @Description
+//    public void checkWeatherDescription() throws IOException {
+//        String jsonString = EntityUtils.toString(response.getEntity());
+//        DocumentContext doc = JsonPath.parse(jsonString);
+//        String main = doc.read("$.weather[0].main");
+//        Assert.assertNotNull(main, "No main message");
+//        String description = doc.read("$.weather[0].description");
+//        Assert.assertNotNull(description, "No weather description");
+//    }
+//
+//    @Test
+//    @Description("Check timezone")
+//    public void checkTimeZone() throws IOException {
+//        String jsonString = EntityUtils.toString(response.getEntity());
+//        DocumentContext doc = JsonPath.parse(jsonString);
+//        int timezone = doc.read("$.timezone");
+//        Assert.assertEquals(timezone, Kharkiv.timezone, "Incorrect timezone");
+//    }
 }
