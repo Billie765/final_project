@@ -10,7 +10,7 @@ public class BaseTest {
     @BeforeSuite
     public void suiteSetUp() {
         System.out.println("Before Suite setUp runs");
-        Configuration.startMaximized = true;
+        Configuration.headless = true;
     }
 
     @BeforeTest
@@ -34,6 +34,7 @@ public class BaseTest {
     public void cleanUp() {
         clearBrowserCookies();
         clearBrowserLocalStorage();
+        System.out.println("After method cleanup");
     }
 
     @AfterClass
